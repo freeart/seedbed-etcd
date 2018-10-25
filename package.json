@@ -1,0 +1,23 @@
+{
+  "name": "seedbed-etcd",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeart/seedbed-etcd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/freeart/seedbed-etcd/issues"
+  },
+  "homepage": "https://github.com/freeart/seedbed-etcd#readme",
+  "dependencies": {
+    "async": "^2.6.1",
+    "etcd-fb": "^1.1.3"
+  }
+}
