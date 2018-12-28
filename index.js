@@ -32,8 +32,8 @@ module.exports = function () {
 		configStorage.config(process.env.ETCD || "http://127.0.0.1:2379");
 		configStorage.__connect();
 
-		const filename = path.join(`../../etcd-${process.env.NODE_ENV}.json`);
-		const backup = path.join(`../../etcd-${process.env.NODE_ENV}.json.bak`);
+		const filename = path.join(__dirname, `../../etcd-${process.env.NODE_ENV}.json`);
+		const backup = path.join(__dirname, `../../etcd-${process.env.NODE_ENV}.json.bak`);
 
 		if (!fs.existsSync(filename)) {
 			throw new Error(`${filename} not found`)
